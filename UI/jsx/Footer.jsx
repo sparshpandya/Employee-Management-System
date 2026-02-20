@@ -1,0 +1,15 @@
+// Footer.jsx
+import React from "react";
+
+class Footer extends React.Component {
+    render() {
+        return (
+            <footer className="footer">
+                <p>
+                    &copy; 2024 Employee Management System. All rights reserved.
+                </p>
+            </footer>
+        );
+    }
+}
+export default Footer;

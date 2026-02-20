@@ -1,0 +1,258 @@
+/* style.css */
+
+body {
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #43b9b2;
+    border: 1px solid #43b9b2;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.page-header {
+    box-shadow: 0 4px 34px #0a4b550d;
+    margin: 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    display: flex;
+    background: #fff;
+}
+
+.page-sidebar {
+    border-top: 2px solid rgb(249, 250, 252);
+    box-shadow: 0 36px 35px #0000001a;
+    height: 100vh;
+    left: 0;
+    margin-top: 90px;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s;
+    width: 253px;
+    z-index: 11;
+    padding: 20px;
+}
+
+.page-sidebar ul {
+    padding: 0;
+}
+
+.page-sidebar ul li {
+    list-style: none;
+}
+
+.page-sidebar a {
+    background-color: #f4f5f8;
+    align-items: center;
+    border-radius: 0;
+    display: flex;
+    font-weight: 500;
+    gap: 10px;
+    padding: 10px 20px;
+    border: none;
+    color: rgb(118, 118, 118);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.page-sidebar a:hover {
+    background-color: #43b9b21a;
+
+    color: #43b9b2;
+}
+
+.page-sidebar a.active {
+    background-color: #43b9b21a;
+    align-items: center;
+    border-radius: 0;
+    display: flex;
+    font-weight: 500;
+    gap: 10px;
+    padding: 10px 20px;
+    border: none;
+    color: #43b9b2;
+}
+
+.logo {
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 15px 16px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: rgb(67, 185, 178);
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.logo a {
+    color: rgb(67, 185, 178);
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.search-form {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 34px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.search-form .input-group input {
+    background-color: #f4f5f8;
+    border: none;
+    border-radius: 0;
+    font-weight: 600;
+    padding: 16px;
+    width: 600px;
+}
+
+.main-content {
+    min-height: calc(100vh - 136px);
+    padding: 0 18px;
+    position: relative;
+    margin-left: 253px;
+    transition: all 0.5s;
+    background-color: rgb(249, 250, 252);
+}
+
+.page-title {
+    align-items: center;
+    padding: 25px 0;
+}
+
+.page-title h3 {
+    font-weight: 500;
+    color: #3d3d47;
+    font-size: 24px;
+    margin: 0;
+}
+
+.page-title h3 span {
+    margin-left: 5px;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid #f4f5f8;
+    border-radius: 5px;
+    margin-bottom: 24px;
+}
+
+.theme-form input,
+.theme-form select {
+    font-weight: 400;
+    line-height: 17px;
+    padding: 12px 20px;
+    background-color: #f4f5f8;
+    border: none;
+    border-radius: 5px;
+    color: #898989;
+    font-size: 14px;
+    width: 100%;
+}
+
+.form-check-label {
+    margin-bottom: 5px;
+}
+
+.employee-table tr th {
+    color: #767676;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 8px;
+    background-color: #ecf8f7;
+}
+
+.employee-table tbody tr td {
+    padding: 12px 8px;
+    font-size: 15px;
+    color: #333;
+}
+
+.actions a,
+button {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0 3px;
+    font-size: 16px;
+    color: rgb(67, 185, 178);
+}
+
+.actions a:hover,
+button:hover {
+    color: #222;
+}
+
+.employee-table .form-check-input:checked {
+    background-color: #43b9b2;
+    border-color: #43b9b2;
+}
+
+.employee-table.table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-color-type: rgb(255 255 255);
+    --bs-table-bg-type: rgb(255 255 255);
+}
+
+.employee-table.table-striped > tbody > tr:nth-of-type(even) > * {
+    --bs-table-color-type: #f4f5f8;
+    --bs-table-bg-type: #f4f5f8;
+}
+
+.error {
+    font-size: 15px;
+}
+
+.success-message {
+    padding: 20px 12px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.dashboard .card span {
+    font-size: 30px;
+    color: rgb(67, 185, 178);
+}
+
+.dashboard .card h4 {
+    font-size: 18px;
+}
+
+.no-data-message h3 {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+    color: #43b9b2;
+}
+
+footer {
+    background-color: #fff;
+    bottom: 0;
+    left: 280px;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
